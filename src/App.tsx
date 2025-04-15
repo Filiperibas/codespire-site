@@ -442,11 +442,13 @@ function App() {
                         index === currentSlide ? 'opacity-100' : 'opacity-0'
                       }`}
                     >
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-cover"
-                      />
+                      <div className="relative aspect-video sm:aspect-[4/3] lg:aspect-[16/9] overflow-hidden rounded-xl">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-8">
                         <h3 className="text-2xl font-bold mb-2">{item.title}</h3>
                         <p className="text-gray-300 mb-2">{item.description}</p>
