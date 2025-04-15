@@ -19,28 +19,25 @@ import {
   Phone
 } from 'lucide-react';
 
+import site1 from './portfolio-img/site1.png';
+import site2 from './portfolio-img/site2.png';
+
 function App() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const portfolioItems = [
     {
-      image: "https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      title: "E-commerce Moderno",
-      description: "Desenvolvimento de loja virtual completa com integração de pagamentos e gestão de estoque.",
-      client: "Fashion Store"
+      image: site1,
+      title: "Cardápio Virtual",
+      description: "Desenvolvimento de loja virtual completa para restaurantes, com cardápio digital, integração de pedidos e foco na experiência do usuário.",
+      client: "CodeSpire"
     },
     {
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      title: "Website Institucional",
-      description: "Site responsivo com design premium e otimização para mecanismos de busca.",
-      client: "Tech Solutions"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-      title: "Landing Page de Conversão",
-      description: "Página otimizada para conversão com mais de 30% de taxa de conversão.",
-      client: "Marketing Pro"
+      image: site2,
+      title: "Água Express",
+      description: "Sistema digital para pedidos de galões de água, com catálogo de produtos, integração com WhatsApp e visual responsivo.",
+      client: "CodeSpire"
     }
   ];
 
@@ -230,13 +227,13 @@ function App() {
             <div className="grid md:grid-cols-2 gap-8">
               {[
                 {
-                  title: 'Landing Page',
+                  title: 'Landing Page Profissional',
                   description: 'Páginas otimizadas para converter visitantes em clientes.',
                   icon: <ChevronRight className="w-8 h-8 text-[#d4af37]" />
                 },
                 {
-                  title: 'Sites Funcionais',
-                  description: 'Websites completos com design responsivo e alto desempenho.',
+                  title: 'Sistemas e Aplicativos Sob Medida',
+                  description: 'Sistemas web e aplicativos personalizados, integrados às necessidades reais do seu negócio.',
                   icon: <Code2 className="w-8 h-8 text-[#d4af37]" />
                 },
                 {
@@ -273,7 +270,7 @@ function App() {
               {/* Start Local */}
               <div className="bg-[#121212] rounded-xl p-8 border border-[#d4af37]/20 hover:border-[#d4af37] transition-colors">
                 <h3 className="text-2xl font-bold mb-4">Start Local</h3>
-                <div className="text-3xl font-bold mb-6 text-[#d4af37]">R$ 997</div>
+                <div className="text-3xl font-bold mb-6 text-[#d4af37]">R$ 1197</div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
@@ -281,7 +278,11 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Otimização para Google</span>
+                    <span>SEO Local</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-[#d4af37] mr-2" />
+                    <span>Relatório de desempenho básico mensal</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
@@ -289,7 +290,11 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Hospedagem (3 meses)</span>
+                    <span>Manutenção GMB (plano 6 meses): R$100/mês</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-[#d4af37] mr-2" />
+                    <span>Suporte 24/7</span>
                   </li>
                 </ul>
                 <a 
@@ -316,7 +321,7 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Blog Integrado</span>
+                    <span>Google Meu Negócio</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
@@ -324,15 +329,23 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
+                    <span>Relatório de desempenho básico mensal</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-[#d4af37] mr-2" />
+                    <span>WhatsApp Automatizado respostas automáticas + envio de catálogo</span>
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="w-5 h-5 text-[#d4af37] mr-2" />
                     <span>Domínio Grátis (1 ano)</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Hospedagem (6 meses)</span>
+                    <span>Manutenção (plano 6 meses): R$175/mês</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Suporte Premium</span>
+                    <span>Suporte 24/7</span>
                   </li>
                 </ul>
                 <a 
@@ -352,7 +365,7 @@ function App() {
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>E-commerce Completo</span>
+                    <span>E-commerce Personalizado Completo</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
@@ -360,15 +373,15 @@ function App() {
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Automação de Marketing</span>
+                    <span>Automação de WhatsApp + Instagram</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Gestão de Redes Sociais</span>
+                    <span>Google Meu Negócio</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
-                    <span>Hospedagem (12 meses)</span>
+                    <span>Manutenção (plano 6 meses): R$175/mês</span>
                   </li>
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
