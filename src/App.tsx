@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+
 import { 
   Code2, 
   Instagram, 
@@ -270,7 +271,7 @@ function App() {
               {/* Start Local */}
               <div className="bg-[#121212] rounded-xl p-8 border border-[#d4af37]/20 hover:border-[#d4af37] transition-colors">
                 <h3 className="text-2xl font-bold mb-4">Start Local</h3>
-                <div className="text-3xl font-bold mb-6 text-[#d4af37]">R$ 1197</div>
+                <div className="text-3xl font-bold mb-6 text-[#d4af37]">R$ 1.197</div>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-center">
                     <Check className="w-5 h-5 text-[#d4af37] mr-2" />
